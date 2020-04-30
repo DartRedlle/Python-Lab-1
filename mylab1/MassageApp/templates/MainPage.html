@@ -1,0 +1,16 @@
+{% extends 'BasePage.html' %}
+
+
+
+
+
+
+{% block content %}
+    {% for Massage in Massages %}
+        <div class="post">
+            <h1>header</h1>
+            <p>SomeText</p>
+            <h1>{{ Massage.header }}</h1>
+            <p>{{ Massage.text|linebreaksbr }}</p>
+    {% endfor %}
+{% endblock %}
